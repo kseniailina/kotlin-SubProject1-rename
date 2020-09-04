@@ -8,11 +8,13 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.Project
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.VersionedSettings
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.versionedSettings
 
+const val REPOSITORY_NAME = "chaged-name1"
+
 object Project : Project({
     uuid = "052d3d4e-74b9-4cde-ab03-141a00a4ea9d"
     id("KotlinMainProjectRename_KotlinSubProject1Rename")
     parentId("KotlinMainProjectRename")
-    name = "Kotlin SubProject1 Rename"
+    name = REPOSITORY_NAME
 
     vcsRoot(KotlinMainProjectRename_KotlinSubProject1Rename_HttpsGithubComKseniailinaKotlinSubProject1renameGitRefsHeadsMaster)
 
